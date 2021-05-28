@@ -14,9 +14,9 @@ graph["fin"] = {}
 #costs_table
 infinity=float("inf")
 costs={}
-cost["a"]=6
-cost["b"]=2
-cost["fin"]=infinity
+costs["a"]=6
+costs["b"]=2
+costs["fin"]=infinity
 #parents
 parents={}
 parents["a"]="start"
