@@ -1,3 +1,12 @@
+def find_lowest_cost_node(costs):
+    lowest_cost=infinity
+    lowets_cost_node=None
+    for node in costs:
+        cost=costs[node]
+        if cost<lowest_cost and node not in processed:
+            lowest_cost=cost
+            lowets_cost_node=node
+    return lowets_cost_node
 graph=dict()
 print(graph)
 
@@ -31,19 +40,12 @@ while node is not None:
     for n in neighbours.keys():
         new_cost=cost+neighbours[n]
         if costs[n]>new_cost:
-            cost[n]=new_cost
+            costs[n]=new_cost
             parents[n]=node
         processed.append(node)
     node=find_lowest_cost_node(costs)
-def find_lowest_cost_node(costs):
-    lowest_cost=infinity
-    lowets_cost_node=None
-    for node in costs:
-        cost=costs[node]
-        if cost<lowest_cost and node not in processed:
-            lowest_cost=cost
-            lowets_cost_node=node
-    return lowets_cost_node
+
+
 
 
 
