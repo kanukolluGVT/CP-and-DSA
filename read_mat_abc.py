@@ -26,4 +26,5 @@ if __name__=="main":
     A=readmatrix(n)
     B=readmatrix(n)
     C=readmatrix(n)
+    print(freivalds(A,B,C))
 
