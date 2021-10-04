@@ -1,0 +1,10 @@
+//unbounded kanpsack
+if(val[i-1]<sum)
+t[i][j]=max(val[i-1]+t[i][j-val[i-1]],t[i-1][j])
+else
+t[i][j]=t[i-1][j]
+//bounded kanpsack
+if(val[i-1]<sum)
+t[i][j]=max(val[i-1]+t[i-1][j-val[i-1]],t[i-1][j])
+else
+t[i][j]=t[i-1][j]

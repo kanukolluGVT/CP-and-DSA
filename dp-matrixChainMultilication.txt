@@ -1,0 +1,11 @@
+//format
+int solve(int arr[],int i,int j)
+int solve(string s,int i,int j)
+//now this function is a recusrive function it will have a base condition
+//think of the smallest valid input
+size of array or string is either greater than or equal to 0
+if i>j return 0
+for k=i to k<j k++
+tempans=solve(i,k)+/-||&&solve(k+1,j)
+ans=function(tempans)
+return ans

@@ -1,0 +1,15 @@
+//fractional knapsack is a greedy problem
+//0-1 knapsack is a dynamic programing approach
+//in 0-1 knapsack we can add either whole item or we cann not add but we cann not add fraction of items
+//unbounded knapsack ,we have unlimited supply
+//0-1 knapsack weight,value,capacity array are given
+//in 0-1 we have to output maximum profit
+
+//dymanic programing 
+//1.choice
+//2.optimal
+
+//dp=recursion+storage
+//dp->1.recursive solution
+//2.memoization
+//3.topdown
